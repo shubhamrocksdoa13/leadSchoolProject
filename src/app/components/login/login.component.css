@@ -1,0 +1,155 @@
+.bg-all{
+    background: #080503;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    position:fixed;
+    width: 100%;
+}
+.cursor{
+    cursor: pointer;
+}
+
+.card{
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../../../assets/bg.PNG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 90vh;
+}
+.color-green{
+  color: green;
+}
+.color-white{
+    color: #fff;
+}
+.color-red{
+  color: red;
+}
+.color-orange{
+    color: orange;
+}
+.text-underline{
+    text-decoration: underline;
+}
+.text-underline:hover{
+    text-decoration: none;
+}
+.bg-orange{
+    background-color: rgba(200, 200, 0, 0.4);
+}
+.fs-24{
+    font-size: 24px;
+}
+.i-form-frame{
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: rgba(100, 100, 100, 0.2);
+}
+
+/****  floating-Lable style start ****/
+.floating-label {
+	position:relative;
+	margin-bottom:20px;
+	padding-bottom: 2px;
+  }
+  .floating-input , .floating-select {
+	font-size: 14px;
+	padding:4px 4px;
+	display:block;
+	width:100%;
+	height:30px;
+	background-color: transparent;
+	border:none;
+    border-bottom:1px solid #cccc;
+    color: #fff;
+  }
+
+  .floating-input:focus , .floating-select:focus {
+	   outline:none;
+	   border-bottom: 1px solid orange;
+	   box-shadow: 1px #cccc;
+  }
+
+  .floating-label label {
+	color:#fff;
+	font-size: 14px;
+	font-weight: normal;
+	position:absolute;
+	pointer-events:none;
+	left:5px;
+	top:5px;
+	transition:0.2s ease all;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
+  }
+
+  .floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+	top:-10px;
+	font-size:10px;
+	color:#fff;
+  }
+
+  .floating-select:focus ~ label , .floating-select:not([value=""]):valid ~ label {
+	top:-18px;
+	font-size:14px;
+	color:#fff;
+  }
+
+  /* active state */
+  .floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after, .floating-select:focus ~ .bar:before, .floating-select:focus ~ .bar:after {
+	width:50%;
+  }
+
+  *, *:before, *:after {
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+  }
+
+  .floating-textarea {
+	 min-height: 30px;
+	 max-height: 260px;
+	 overflow:hidden;
+	overflow-x: hidden;
+  }
+
+  /* highlighter */
+  .highlight {
+	position:absolute;
+	height:50%;
+	width:100%;
+	top:15%;
+	left:0;
+	pointer-events:none;
+	opacity:0.5;
+  }
+
+  /* active state */
+  .floating-input:focus ~ .highlight , .floating-select:focus ~ .highlight {
+	-webkit-animation:inputHighlighter 0.3s ease;
+	-moz-animation:inputHighlighter 0.3s ease;
+	animation:inputHighlighter 0.3s ease;
+  }
+
+  /* animation */
+  @-webkit-keyframes inputHighlighter {
+	  from { background:#fff; }
+	to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+	  from { background:#fff; }
+	to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+	  from { background:#fff; }
+	to 	{ width:0; background:transparent; }
+  }
+
+  /****  floating-Lable style end ****/
